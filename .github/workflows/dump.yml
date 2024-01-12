@@ -1,4 +1,4 @@
-name: Dump firmware(s)
+name: Firmware Dumper
 
 on:
   workflow_dispatch:
