@@ -1,7 +1,7 @@
 # Nothing Phone (2) Archive
 
 * Comprehensive Collection of Unmodified Full OTA Update Packages & Stock OTA Images for Nothing Phone (2)
-
+* A personally maintained fork of [Nothing Archive by arter97](https://github.com/arter97/nothing_archive)
 
 ## Downloads
 
@@ -34,7 +34,9 @@
 
 - If you optionally want to have dm-verity disabled, perform:
 
+``` bash
 fastboot update --disable-verity --disable-verification vbmeta.img
+```
 
 ## Manual Sideloading of Full OTA Packages
 
@@ -64,11 +66,13 @@ fastboot update --disable-verity --disable-verification vbmeta.img
 
 - You can check the downloaded file's integrity with one of the following commands (for logical):
 
- bash
+``` bash
 md5sum -c *-hash.md5
 sha1sum -c *-hash.sha1
 sha256sum -c *-hash.sha256
 xxh128sum -c *-hash.xxh128
+```
+
 - xxh128 is usually the fastest.
 
 
