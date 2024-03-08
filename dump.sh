@@ -87,16 +87,19 @@ done
 
 # Switch to `syn` directory and create a 7z archive for boot partition images tagged with "-boot"
 cd ../syn
-7z a -mmt128 -mx6 ../out/${TAG}-image-boot.7z *
+7z a -mmt4 -mx6 ../out/${TAG}-image-boot.7z *
+rm -rf ../syn
 
 # Switch to `ota` directory and create a 7z archive for firmware images tagged with "-firmware"
 cd ../ota
-7z a -mmt128 -mx6 ../out/${TAG}-image-firmware.7z *
+7z a -mmt4 -mx6 ../out/${TAG}-image-firmware.7z *
+rm -rf ../ota
 
 # Switch to `dyn` directory and create a split 7z archive for logical images tagged with "-logical"
 cd ../dyn
-7z a -mmt128 -mx6 -v1g ../out/${TAG}-image-logical.7z *
+7z a -mmt4 -mx6 -v1g ../out/${TAG}-image-logical.7z *
 wait
+rm -rf ../dyn
 
 # Switch to `fullota` directory
 cd ../fullota
@@ -109,13 +112,8 @@ SHA1_HASH=$(openssl dgst -sha1 -r "${TAG}-FullOTA.zip" | cut -d ' ' -f 1)
 echo "${SHA1_HASH}" > "../out/${TAG}-FullOTA-hash.sha1"
 
 # Create a split 7z archive for the base FullOTA Package
-7z a -mmt128 -mx6 -v1g "../out/${TAG}-FullOTA.7z" "${TAG}-FullOTA.zip"
-
-# Move back to the previous directory
-cd ..
-
-# Cleanup of corresponding folders
-rm -rf ../fullota ../ota ../dyn ../syn
+7z a -mmt4 -mx6 -v1g "../out/${TAG}-FullOTA.7z" "${TAG}-FullOTA.zip"
+rm -rf ../fullota
 
 # Echo tag name, release body, and release history
 echo "tag=$TAG" >> "$GITHUB_OUTPUT"
