@@ -52,6 +52,7 @@ abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, dtbo, featenabler, hyp, ima
 ```bash
   fastboot update --disable-verity --disable-verification vbmeta.img
 ```
+- Alternatively users can follow this [detailed guide](https://telegra.ph/Guide-for-flashing-Stock-ROM-on-Nothing-Phone-2-04-22).
 
 ## Manual Sideloading of Full OTA Packages
 
