@@ -8,25 +8,28 @@
 
 - Official Full OTA Update Package is marked `-FullOTA`. Extract the splitted 7z parts to get the `<name>-FullOTA.zip`.
 
-- The Stock OTA image files are categorized and archived in .7z format based on `boot`, `logical`, and `firmware` partitions:
+## Categories
 
-### Boot Partition (marked `-image-boot.7z`)
+- The Stock OTA image files are categorized and archived in .7z format based on `boot`, `logical`, and `firmware` categories.
+- The categorization mentioned below does not apply to the [2.5.5-Hotfix](https://github.com/spike0en/Pong_Archive/releases/tag/2.5.5-Hotfix) or releases made prior to it. 
 
-Includes 4 images:
+### Boot (marked `-image-boot.7z`)
+
+Includes 5 images:
 ```bash
-boot, vendor_boot, recovery & vbmeta
+boot, dtbo, vendor_boot, recovery & vbmeta
 ```
-### Logical partition (marked `-image-logical.7z.001-003`)
+### Logical (marked `-image-logical.7z.001-003`)
 
 Includes 8 images:
 ```bash
 system, system_ext, product, vendor, vendor_dlkm, odm, vbmeta_system & vbmeta_vendor
 ```
-### Firmware partition (marked `-image-firmware.7z`)
+### Firmware (marked `-image-firmware.7z`)
 
-Includes 24 images:
+Includes 23 images:
 ```bash
-abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, dtbo, featenabler, hyp, imagefv, keymaster, modem, multiimgoem, multiimgqti, qupfw, qweslicstore, shrm, tz, uefi, uefisecapp, xbl, xbl_config & xbl_ramdump
+abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, keymaster, modem, multiimgoem, multiimgqti, qupfw, qweslicstore, shrm, tz, uefi, uefisecapp, xbl, xbl_config & xbl_ramdump
 ```
 
 ## Disclaimer
