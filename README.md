@@ -11,7 +11,7 @@
 ## Categories
 
 - The Stock OTA image files are categorized and archived in .7z format based on `boot`, `logical`, and `firmware` categories.
-- The categorization mentioned below does not apply to the [2.5.5-Hotfix](https://github.com/spike0en/Pong_Archive/releases/tag/2.5.5-Hotfix) or releases made prior to it. 
+- The categorization mentioned below does not apply to the [2.5.5-Hotfix](https://github.com/spike0en/Pong_Archive/releases/tag/2.5.5-Hotfix) or releases made prior to it. Users should manually relocate the `dtbo` image from the firmware > boot category folder after extraction for these specific releases. This has been resolved in subsequent releases.
 
 ### Boot (marked `-image-boot.7z`)
 
