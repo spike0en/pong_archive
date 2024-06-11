@@ -11,19 +11,19 @@
 ## Categories
 
 - The Stock OTA image files are categorized and archived in .7z format based on `boot`, `logical`, and `firmware` categories.
-- The categorization mentioned below does not apply to the [2.5.5-Hotfix](https://github.com/spike0en/Pong_Archive/releases/tag/2.5.5-Hotfix) or releases made prior to it. Users should manually relocate the `dtbo` image from the firmware > boot category folder after extraction for these specific releases. This has been resolved in subsequent releases.
+- The categorization mentioned below does not apply to the [2.5.5-Hotfix](https://github.com/spike0en/Pong_Archive/releases/tag/2.5.5-Hotfix) or releases made prior to it. Users should manually relocate the `dtbo, vbmeta_system & vbmeta_vendor` images from the `firmware` to the `boot` category folder after extraction for these specific releases. This has been resolved in subsequent releases.
 
 ### Boot (marked `-image-boot.7z`)
 
-Includes 5 images:
+Includes 7 images:
 ```bash
-boot, dtbo, vendor_boot, recovery & vbmeta
+boot, dtbo, vendor_boot, recovery, vbmeta, vbmeta_system & vbmeta_vendor
 ```
 ### Logical (marked `-image-logical.7z.001-003`)
 
-Includes 8 images:
+Includes 6 images:
 ```bash
-system, system_ext, product, vendor, vendor_dlkm, odm, vbmeta_system & vbmeta_vendor
+system, system_ext, product, vendor, vendor_dlkm & odm
 ```
 ### Firmware (marked `-image-firmware.7z`)
 
