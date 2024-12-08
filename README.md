@@ -1,12 +1,17 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/spike0en/Pong_Archive)![GitHub repo size](https://img.shields.io/github/repo-size/spike0en/Pong_Archive)[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2FPong-Archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/Pong_Archive)
 # Nothing Phone (2) Archive
 
 * A comprehensive collection of unmodified Full OTA update packages & stock OTA images for Nothing Phone (2).
+
+---
 
 ## Downloads
 
 - Downloads are tagged with `POST_OTA_VERSION` & `NothingOS version` [here](https://github.com/spike0en/Pong_Archive/releases).
 
 - Official Full OTA Update Package is marked `-FullOTA`. Extract the splitted 7z parts to get the `<name>-FullOTA.zip`.
+
+---
 
 ## Categories
 
@@ -32,6 +37,8 @@ Includes 23 images:
 abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, keymaster, modem, multiimgoem, multiimgqti, qupfw, qweslicstore, shrm, tz, uefi, uefisecapp, xbl, xbl_config & xbl_ramdump
 ```
 
+---
+
 ## Disclaimer
 
 - While this is a collection of unmodified images, you still need to have the bootloader unlocked.
@@ -43,6 +50,8 @@ abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, 
 - It's important to note that full OTA packages may not be consistently available with every release. 
 
 - For further inquiries, discussions, and engaging content, users are encouraged to explore the [Nothing Phone (2) Telegram Community](https://t.me/NothingPhone2)
+
+---
 
 ## Fastboot Flashing
 
@@ -73,6 +82,7 @@ abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, 
 
 - Alternatively, users can directly flash these full OTA packages using available custom recoveries for Nothing Phone (2), such as [TWRP](https://xdaforums.com/t/recovery-12-unofficial-teamwin-recovery-project.4623971) or [OrangeFox](https://xdaforums.com/t/recovery-12-1-official-orangefox-recovery-project-ofrp.4631141).
 
+---
 
 ## NothingMuchROM
 
@@ -80,6 +90,7 @@ abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, 
 
 - Skip downloading `-logical` files, and follow the above steps but answer "N" to Flash logical partition images? during [Pong_fastboot_flasher](https://github.com/HELLBOY017/Pong_fastboot_flasher)'s installation.
 
+---
 
 ## Integrity Check
 
@@ -94,7 +105,10 @@ abl, aop, aop_config, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, 
 
 - xxh128 is usually the fastest.
 
+---
 
 ### Thanks to
 - [luk1337](https://github.com/luk1337/oplus_archive) & [arter97](https://github.com/arter97/nothing_archive) for their great work!
 - [Hellboy017](https://github.com/HELLBOY017) for his assistance to make the [Pong Fastboot Flasher](https://github.com/HELLBOY017/Pong_fastboot_flasher).
+
+---
